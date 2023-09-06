@@ -1,37 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 /*import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';*/
 import './App.scss';
-import {Row} from './features/row/Row';
-
+import {Table} from "../table/Table";
+import {AddForm} from "../addForm/AddForm";
 
 function App() {
-  return (
-      <>
-        <h1 className="main-title">Книги</h1>
-        <div className="grid-table">
-            <span>
-                Автор
-            </span>
-            <span>
-                Название
-            </span>
-            <span>
-                Статус
-            </span>
-            <span>
-                Рейтинг
-            </span>
-            <span>
-                Отзыв
-            </span>
-            <Row/>
-        </div>
-      </>
+
+    const [tableData, setTableData] = useState([
+        {
+            author: 'Герман Гессе',
+            title: 'Степной волк',
+            status: true,
+            rating: 10,
+            comment: 'Хорошо'
+        },
+        {
+            author: 'Чак Паланик',
+            title: 'Снафф',
+            status: false,
+            rating: 9,
+            comment: 'Неплохо. Очень неплохо'
+        },
+    ]);
 
 
+    const addRow = (author, title, status, rating, comment) => {
+        setTableData([...tableData, {author, title, status, rating, comment}])
+    }
 
-  );
+    return (
+        <>
+            <Table data={tableData}/>
+            <AddForm addRow={addRow}/>
+        </>
+    );
 }
 
 /*function App() {
