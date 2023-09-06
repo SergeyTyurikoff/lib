@@ -1,9 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+/*import logo from './logo.svg';
+import { Counter } from './features/counter/Counter';*/
+import './App.scss';
+import {Row} from './features/row/Row';
+
 
 function App() {
+  return (
+      <>
+        <h1 className="main-title">Книги</h1>
+        <div className="grid-table">
+            <span>
+                Автор
+            </span>
+            <span>
+                Название
+            </span>
+            <span>
+                Статус
+            </span>
+            <span>
+                Рейтинг
+            </span>
+            <span>
+                Отзыв
+            </span>
+            <Row/>
+        </div>
+      </>
+
+
+
+  );
+}
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -53,6 +84,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
