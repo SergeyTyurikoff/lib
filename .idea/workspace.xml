@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41882155-c297-48b5-baf2-d1d5432814a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/addForm/AddForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/row/Row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/row/Row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/table/Table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/table/Table.scss" afterDir="false" />
+    <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/row/Row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/row/Row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addForm/AddForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addForm/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addForm/AddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/row/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/row/Row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/Table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +25,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2V1nensKNsvzHadhhCH0MO7YoNx" />
+  <component name="ProjectId" id="2V3RNHuRsIptqST5mZC9sOBomeN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -40,30 +37,22 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Development/Projects/37.ReactUdemyRestart/redux-training",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projects/Projects. Tyurikov.S.Y/react-projects/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Development\Projects\react-projects\lib\src\components\row" />
-      <recent name="C:\Development\Projects\react-projects\lib\src\components\app" />
-      <recent name="C:\Development\Projects\react-projects\lib\src" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41882155-c297-48b5-baf2-d1d5432814a4" name="Changes" comment="" />
-      <created>1694012551767</created>
+      <changelist id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="" />
+      <created>1694062736094</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694012551767</updated>
-      <workItem from="1694012552927" duration="43000" />
-      <workItem from="1694012605338" duration="7117000" />
+      <updated>1694062736094</updated>
+      <workItem from="1694062737760" duration="9074000" />
     </task>
     <servers />
   </component>

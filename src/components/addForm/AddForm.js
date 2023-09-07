@@ -1,5 +1,6 @@
 import {useState} from "react";
 import './AddForm.scss';
+import { v4 as uuidv4 } from 'uuid';
 
 export const AddForm = ({addRow}) => {
 
@@ -11,7 +12,7 @@ export const AddForm = ({addRow}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        addRow(author, title, status, rating, comment)
+        addRow(uuidv4(), author, title, status, rating, comment)
     }
 
     return (

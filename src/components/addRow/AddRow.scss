@@ -1,0 +1,17 @@
+.add-row {
+  td {
+    border: 0;
+  }
+  .plus {
+    background: #d3f7d3;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+}

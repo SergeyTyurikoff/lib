@@ -1,7 +1,8 @@
 import {Row} from "../row/Row";
 import './Table.scss';
+import {AddRow} from "../addRow/AddRow";
 
-export const Table = ({data}) => {
+export const Table = ({data, deleteRow}) => {
 
     return (
         <table className="table">
@@ -17,7 +18,7 @@ export const Table = ({data}) => {
                         Название
                     </th>
                     <th>
-                        Статус
+                        Прочитано
                     </th>
                     <th>
                         Рейтинг <br/> (из 10)
@@ -25,10 +26,14 @@ export const Table = ({data}) => {
                     <th>
                         Отзыв
                     </th>
+                    <th>
+                        Действия
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                {data.map((item, i) => <Row id={i} data={item}/>)}
+                {data.map(item => <Row key={item.id} id={item.id} deleteRow={deleteRow} data={item}/>)}
+                <AddRow/>
             </tbody>
         </table>
     )

@@ -4,11 +4,13 @@ import { Counter } from './features/counter/Counter';*/
 import './App.scss';
 import {Table} from "../table/Table";
 import {AddForm} from "../addForm/AddForm";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
     const [tableData, setTableData] = useState([
         {
+            id: uuidv4(),
             author: 'Герман Гессе',
             title: 'Степной волк',
             status: true,
@@ -16,22 +18,35 @@ function App() {
             comment: 'Хорошо'
         },
         {
+            id: uuidv4(),
             author: 'Чак Паланик',
             title: 'Снафф',
-            status: false,
+            status: true,
             rating: 9,
             comment: 'Неплохо. Очень неплохо'
+        },
+        {
+            id: uuidv4(),
+            author: 'Виктор Пелевин',
+            title: 'Чапаев и Пустота',
+            status: false,
+            rating: '',
+            comment: ''
         },
     ]);
 
 
-    const addRow = (author, title, status, rating, comment) => {
-        setTableData([...tableData, {author, title, status, rating, comment}])
+    const addRow = (id, author, title, status, rating, comment) => {
+        setTableData([...tableData, {id, author, title, status, rating, comment}])
+    }
+
+    const deleteRow = (id) => {
+        setTableData(tableData.filter(item => item.id !== id))
     }
 
     return (
         <>
-            <Table data={tableData}/>
+            <Table data={tableData} deleteRow={deleteRow}/>
             <AddForm addRow={addRow}/>
         </>
     );
