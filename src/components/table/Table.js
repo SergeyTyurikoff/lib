@@ -2,7 +2,7 @@ import {Row} from "../row/Row";
 import './Table.scss';
 import {AddRow} from "../addRow/AddRow";
 
-export const Table = ({data, deleteRow}) => {
+export const Table = ({data, deleteRow, updateRow, addRow}) => {
 
     return (
         <table className="table">
@@ -32,8 +32,8 @@ export const Table = ({data, deleteRow}) => {
                 </tr>
             </thead>
             <tbody>
-                {data.map(item => <Row key={item.id} id={item.id} deleteRow={deleteRow} data={item}/>)}
-                <AddRow/>
+                {data.map(item => <Row key={item.id} id={item.id} deleteRow={deleteRow} updateRow={updateRow} data={item}/>)}
+                <AddRow addRow={addRow}/>
             </tbody>
         </table>
     )

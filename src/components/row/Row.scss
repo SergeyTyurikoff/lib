@@ -7,6 +7,26 @@
   }
 }
 
+td > input {
+  border: 0;
+  background: transparent;
+}
+
+td > input:focus {
+  outline: 2px solid #ff4bb9;
+  //background: #b3b3b3;
+}
+
 .cross {
   cursor: pointer;
+  max-width: 12px;
+  width: 100%;
+  margin-top: 4px;
+  padding: 3px;
+  background: #ffbdbd;
+  border-radius: 100px;
+  transition: all .3s;
+  &:hover {
+    background: #9f9f9f;
+  }
 }

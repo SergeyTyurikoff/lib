@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/getData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/addForm/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addForm/AddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/row/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/row/Row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.js" afterDir="false" />
@@ -38,12 +41,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Projects/Projects. Tyurikov.S.Y/react-projects/lib",
+    "last_opened_file_path": "C:/Development/Projects/37.ReactUdemyRestart/marvel_starter",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\Projects\react-projects\lib\src\components\addRow" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694062736094</updated>
       <workItem from="1694062737760" duration="9074000" />
+      <workItem from="1694199452990" duration="8080000" />
     </task>
     <servers />
   </component>

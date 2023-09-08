@@ -1,37 +1,44 @@
 import './Row.scss'
+import {useState} from "react";
+import cross from './cross.svg'
 
-export const Row = ({data, deleteRow, id}) => {
+export const Row = ({data, deleteRow, updateRow, id}) => {
 
     const {author, title, status, rating, comment} = data;
 
-    const handleClick = () => {
+    const [authorRow, setAuthor] = useState(author);
+    const [titleRow, setTitle] = useState(title);
+    const [statusRow, setStatus] = useState(status);
+    const [ratingRow, setRating] = useState(rating);
+    const [commentRow, setComment] = useState(comment);
+
+    const handleClickDelete = () => {
         deleteRow(id)
     }
 
+    const handleClickUpdate = () => {
+        updateRow({id, authorRow, titleRow, statusRow, ratingRow, commentRow})
+    }
+
     return (
-        <tr className={status ? 'done' : null}>
+        <tr id={id}>
             <td>
-                {author}
+                <input type="text" onBlur={handleClickUpdate} onChange={(e) => setAuthor(e.target.value)} value={authorRow}/>
             </td>
             <td>
-                {title}
+                <input type="text" onBlur={handleClickUpdate} onChange={(e) => setTitle(e.target.value)} value={titleRow}/>
             </td>
             <td>
-                {status ? '+' : '-'}
+                <input type="checkbox" onBlur={handleClickUpdate} checked={statusRow} onChange={(e) => setStatus(statusRow => !statusRow)}/>
             </td>
             <td>
-                {rating}
+                <input type="number" onBlur={handleClickUpdate} onChange={(e) => setRating(e.target.value)} value={ratingRow}/>
             </td>
             <td>
-                {comment}
+                <input type="text" onBlur={handleClickUpdate} onChange={(e) => setComment(e.target.value)} value={commentRow}/>
             </td>
             <td className="actions">
-                <span className="cross" onClick={handleClick}>
-                    x
-                </span>
-                <span className="edit">
-                    edit
-                </span>
+                <img className="cross" onClick={handleClickDelete} src={cross} alt="крестик"/>
             </td>
         </tr>
     )

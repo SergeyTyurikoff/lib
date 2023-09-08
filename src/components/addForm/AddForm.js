@@ -12,7 +12,7 @@ export const AddForm = ({addRow}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        addRow(uuidv4(), author, title, status, rating, comment)
+        addRow({id: uuidv4(), author, title, status, rating, comment})
     }
 
     return (
