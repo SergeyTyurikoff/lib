@@ -9,7 +9,7 @@ const initialState = {
             title: 'Степной волк',
             status: true,
             rating: 10,
-            comment: 'Хорошо'
+            comment: 'Неплохо'
         },
         {
             id: uuidv4(),
@@ -17,7 +17,7 @@ const initialState = {
             title: 'Снафф',
             status: true,
             rating: 9,
-            comment: 'Неплохо. Очень неплохо'
+            comment: 'Чудовищно великолепно! Автор неугомонен в своём слоге и в раскрытии перипетий'
         },
         {
             id: uuidv4(),

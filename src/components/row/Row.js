@@ -8,7 +8,7 @@ import cross from './cross.svg'
 export const Row = ({data, id}) => {
 
     const dispatch = useDispatch();
-    const tableDataRedux = useSelector(state => state.table.tableData);
+    const tableData = useSelector(state => state.table.tableData);
 
     const {author, title, status, rating, comment} = data;
 
@@ -23,7 +23,7 @@ export const Row = ({data, id}) => {
     }
 
     const handleClickUpdate = () => {
-        dispatch(updateRowAction(tableDataRedux.map(item => {
+        dispatch(updateRowAction(tableData.map(item => {
             if (item.id === id) {
                 return {
                     id,
@@ -38,6 +38,23 @@ export const Row = ({data, id}) => {
             }
         })))
     }
+
+/*    useEffect(() => {
+        dispatch(updateRowAction(tableData.map(item => {
+            if (item.id === id) {
+                return {
+                    id,
+                    author: authorRow,
+                    title: titleRow,
+                    status: statusRow,
+                    rating: ratingRow,
+                    comment: commentRow,
+                }
+            } else {
+                return item;
+            }
+        })))
+    }, [authorRow, titleRow, statusRow, ratingRow, commentRow])*/
 
     return (
         <tr id={id}>

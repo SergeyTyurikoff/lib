@@ -5,8 +5,8 @@ import {useSelector} from "react-redux";
 
 export const Table = () => {
 
-    const tableDataRedux = useSelector(state => state.table.tableData);
-    console.log(tableDataRedux)
+    const tableData = useSelector(state => state.table.tableData);
+    console.log(tableData)
 
     return (
         <table className="table">
@@ -36,7 +36,7 @@ export const Table = () => {
                 </tr>
             </thead>
             <tbody>
-                {tableDataRedux.map(item => <Row key={item.id} id={item.id} data={item}/>)}
+                {tableData.map(item => <Row key={item.id} id={item.id} data={item}/>)}
                 <AddRow/>
             </tbody>
         </table>

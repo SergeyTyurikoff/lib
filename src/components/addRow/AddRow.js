@@ -1,16 +1,17 @@
-import './AddRow.scss'
-import plus from './plus.svg';
-import {addRowAction} from "../table/tableSlice";
 import {v4 as uuidv4} from "uuid";
 import {useDispatch, useSelector} from "react-redux";
+import {addRowAction} from "../table/tableSlice";
+
+import styles from './AddRow.module.scss';
+import plus from './plus.svg';
 
 export const AddRow = () => {
 
     const dispatch = useDispatch();
-    const tableDataRedux = useSelector(state => state.table.tableData);
+    const tableData = useSelector(state => state.table.tableData);
 
     const handleAddRow = () => {
-        dispatch(addRowAction([...tableDataRedux, {
+        dispatch(addRowAction([...tableData, {
             id: uuidv4(),
             author: '',
             title: '',
@@ -21,10 +22,10 @@ export const AddRow = () => {
     }
 
     return (
-        <tr className="add-row">
+        <tr className={styles.addRow}>
             <td colSpan={5}></td>
             <td>
-                <img className="plus" onClick={handleAddRow} src={plus} alt="знак плюса"/>
+                <img className={styles.plus} onClick={handleAddRow} src={plus} alt="знак плюса"/>
             </td>
         </tr>
     )

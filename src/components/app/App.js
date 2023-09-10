@@ -1,15 +1,11 @@
 import {Table} from "../table/Table";
-import './App.scss';
+import styles from './App.module.scss';
 
 function App() {
     return (
-        <>
-            <div className="board">
-                <div className="table-wrap">
-                    <Table/>
-                </div>
-            </div>
-        </>
+        <div className={styles.tableWrap}>
+            <Table/>
+        </div>
     );
 }
 

@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="feat: перенос основного хранилища состояний из app в table, и также наведение порядка">
-      <change afterPath="$PROJECT_DIR$/src/components/table/tableSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+    <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="feat: создание единого redux store с использованием react-redux, @reduxjs/toolkit">
+      <change afterPath="$PROJECT_DIR$/src/components/app/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/mountains.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/ocean.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/ocean.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/soviet.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/row/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/row/Row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/Table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/tableSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/tableSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +57,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\Projects\react-projects\lib\src" />
+      <recent name="C:\Development\Projects\react-projects\lib\src\fonts" />
       <recent name="C:\Development\Projects\react-projects\lib\src\components\addRow" />
     </key>
   </component>
@@ -62,7 +74,7 @@
       <workItem from="1694199452990" duration="8418000" />
       <workItem from="1694242567236" duration="1173000" />
       <workItem from="1694341529021" duration="9012000" />
-      <workItem from="1694352720858" duration="1705000" />
+      <workItem from="1694352720858" duration="7795000" />
     </task>
     <task id="LOCAL-00001" summary="feat: обновление строки (update), добавление - перестройка (create), верстка">
       <created>1694207871263</created>
@@ -78,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694343294545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: создание единого redux store с использованием react-redux, @reduxjs/toolkit">
+      <created>1694354625221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694354625221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: обновление строки (update), добавление - перестройка (create), верстка" />
     <MESSAGE value="feat: перенос основного хранилища состояний из app в table, и также наведение порядка" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: перенос основного хранилища состояний из app в table, и также наведение порядка" />
+    <MESSAGE value="feat: создание единого redux store с использованием react-redux, @reduxjs/toolkit" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: создание единого redux store с использованием react-redux, @reduxjs/toolkit" />
   </component>
 </project>

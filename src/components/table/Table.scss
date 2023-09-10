@@ -8,8 +8,17 @@
   border-collapse: collapse;
   margin-left: 10px;
   margin-top: 10px;
+  caption {
+    font: 17px/120% 'Montserrat-Bold', sans-serif;
+  }
+  th {
+    font: 15px/120% 'Montserrat-Medium', sans-serif;
+  }
+  td, td input, td textarea {
+    font: 13px/120% 'Montserrat-Regular', sans-serif;
+  }
   th, td {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #b3b3b3;
     text-align: center;
   }
@@ -20,13 +29,5 @@
     tr {
       position: relative;
     }
-/*
-    tr:after {
-      content: 'x';
-      cursor: pointer;
-      position: absolute;
-      right: 4px;
-      top: -5px;
-    }*/
   }
 }
