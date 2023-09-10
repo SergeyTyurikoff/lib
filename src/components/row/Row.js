@@ -1,8 +1,14 @@
+import {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {deleteRowAction, updateRowAction} from "../table/tableSlice";
+
 import './Row.scss'
-import {useState} from "react"
 import cross from './cross.svg'
 
-export const Row = ({data, deleteRow, updateRow, id}) => {
+export const Row = ({data, id}) => {
+
+    const dispatch = useDispatch();
+    const tableDataRedux = useSelector(state => state.table.tableData);
 
     const {author, title, status, rating, comment} = data;
 
@@ -13,11 +19,24 @@ export const Row = ({data, deleteRow, updateRow, id}) => {
     const [commentRow, setComment] = useState(comment);
 
     const handleClickDelete = () => {
-        deleteRow(id)
+        dispatch(deleteRowAction(id));
     }
 
     const handleClickUpdate = () => {
-        updateRow({id, authorRow, titleRow, statusRow, ratingRow, commentRow})
+        dispatch(updateRowAction(tableDataRedux.map(item => {
+            if (item.id === id) {
+                return {
+                    id,
+                    author: authorRow,
+                    title: titleRow,
+                    status: statusRow,
+                    rating: ratingRow,
+                    comment: commentRow,
+                }
+            } else {
+                return item;
+            }
+        })))
     }
 
     return (
@@ -29,13 +48,13 @@ export const Row = ({data, deleteRow, updateRow, id}) => {
                 <input type="text" onBlur={handleClickUpdate} onChange={(e) => setTitle(e.target.value)} value={titleRow}/>
             </td>
             <td>
-                <input type="checkbox" onBlur={handleClickUpdate} checked={statusRow} onChange={(e) => setStatus(statusRow => !statusRow)}/>
+                <input type="checkbox" onBlur={handleClickUpdate} onChange={(e) => setStatus(statusRow => !statusRow)} checked={statusRow}/>
             </td>
             <td>
-                <input type="number" onBlur={handleClickUpdate} onChange={(e) => setRating(e.target.value)} value={ratingRow}/>
+                <input className="text-center" type="number" onBlur={handleClickUpdate} onChange={(e) => setRating(e.target.value)} value={ratingRow}/>
             </td>
             <td>
-                <input type="text" onBlur={handleClickUpdate} onChange={(e) => setComment(e.target.value)} value={commentRow}/>
+                <textarea className="scroll-design" onBlur={handleClickUpdate} onChange={(e) => setComment(e.target.value)} value={commentRow}/>
             </td>
             <td className="actions">
                 <img className="cross" onClick={handleClickDelete} src={cross} alt="крестик"/>

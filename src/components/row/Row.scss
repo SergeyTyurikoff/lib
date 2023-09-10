@@ -7,14 +7,18 @@
   }
 }
 
-td > input {
-  border: 0;
-  background: transparent;
+td {
+  > input, > textarea {
+    border: 0;
+    background: transparent;
+    &:focus {
+      outline: 2px solid #ffbdbd;
+    }
+  }
 }
 
-td > input:focus {
-  outline: 2px solid #ff4bb9;
-  //background: #b3b3b3;
+textarea {
+  resize: none;
 }
 
 .cross {

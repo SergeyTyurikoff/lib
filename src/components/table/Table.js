@@ -1,75 +1,17 @@
 import {Row} from "../row/Row";
 import './Table.scss';
 import {AddRow} from "../addRow/AddRow";
-import {useState} from "react";
-import {v4 as uuidv4} from "uuid";
+import {useSelector} from "react-redux";
 
 export const Table = () => {
 
-    const [tableData, setTableData] = useState([
-        {
-            id: uuidv4(),
-            author: 'Герман Гессе',
-            title: 'Степной волк',
-            status: true,
-            rating: 10,
-            comment: 'Хорошо'
-        },
-        {
-            id: uuidv4(),
-            author: 'Чак Паланик',
-            title: 'Снафф',
-            status: true,
-            rating: 9,
-            comment: 'Неплохо. Очень неплохо'
-        },
-        {
-            id: uuidv4(),
-            author: 'Виктор Пелевин',
-            title: 'Чапаев и Пустота',
-            status: false,
-            rating: '',
-            comment: ''
-        },
-    ]);
-
-
-    const addRow = () => {
-        setTableData([...tableData, {
-            id: uuidv4(),
-            author: '',
-            title: '',
-            status: false,
-            rating: '',
-            comment: ''
-        }])
-    }
-
-    const updateRow = ({id, authorRow, titleRow, statusRow, ratingRow, commentRow}) => {
-        setTableData(tableData.map(item => {
-            if (item.id === id) {
-                return {
-                    id,
-                    author: authorRow,
-                    title: titleRow,
-                    status: statusRow,
-                    rating: ratingRow,
-                    comment: commentRow,
-                }
-            } else {
-                return item;
-            }
-        }))
-    }
-
-    const deleteRow = (id) => {
-        setTableData(tableData.filter(item => item.id !== id))
-    }
+    const tableDataRedux = useSelector(state => state.table.tableData);
+    console.log(tableDataRedux)
 
     return (
         <table className="table">
             <caption className="main-title">
-                Книги
+                Прочитанные книги
             </caption>
             <thead>
                 <tr>
@@ -94,8 +36,8 @@ export const Table = () => {
                 </tr>
             </thead>
             <tbody>
-                {tableData.map(item => <Row key={item.id} id={item.id} deleteRow={deleteRow} updateRow={updateRow} data={item}/>)}
-                <AddRow addRow={addRow}/>
+                {tableDataRedux.map(item => <Row key={item.id} id={item.id} data={item}/>)}
+                <AddRow/>
             </tbody>
         </table>
     )

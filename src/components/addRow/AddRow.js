@@ -1,10 +1,23 @@
 import './AddRow.scss'
 import plus from './plus.svg';
+import {addRowAction} from "../table/tableSlice";
+import {v4 as uuidv4} from "uuid";
+import {useDispatch, useSelector} from "react-redux";
 
-export const AddRow = ({addRow}) => {
+export const AddRow = () => {
 
-    const handleAddRow = (e) => {
-        addRow()
+    const dispatch = useDispatch();
+    const tableDataRedux = useSelector(state => state.table.tableData);
+
+    const handleAddRow = () => {
+        dispatch(addRowAction([...tableDataRedux, {
+            id: uuidv4(),
+            author: '',
+            title: '',
+            status: false,
+            rating: '',
+            comment: ''
+        }]));
     }
 
     return (
