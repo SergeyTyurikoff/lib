@@ -1,5 +1,5 @@
 import './Row.scss'
-import {useState} from "react";
+import {useState} from "react"
 import cross from './cross.svg'
 
 export const Row = ({data, deleteRow, updateRow, id}) => {

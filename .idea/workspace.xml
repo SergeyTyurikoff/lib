@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/getData.js" afterDir="false" />
+    <list default="true" id="ff2ce003-d7cb-44ad-94f4-56ebc1cd64a2" name="Changes" comment="feat: обновление строки (update), добавление - перестройка (create), верстка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addForm/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addForm/AddForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addRow/AddRow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addForm/AddForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addForm/AddForm.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/row/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/row/Row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/Row.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table/Table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/Table.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +28,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Development/Projects/37.ReactUdemyRestart/marvel_starter",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/Projects/37.ReactUdemyRestart/marvel_starter&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Development\Projects\react-projects\lib\src\components\addRow" />
@@ -62,8 +55,18 @@
       <option name="presentableId" value="Default" />
       <updated>1694062736094</updated>
       <workItem from="1694062737760" duration="9074000" />
-      <workItem from="1694199452990" duration="8080000" />
+      <workItem from="1694199452990" duration="8418000" />
+      <workItem from="1694242567236" duration="1173000" />
+      <workItem from="1694341529021" duration="1621000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: обновление строки (update), добавление - перестройка (create), верстка">
+      <created>1694207871263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694207871263</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,10 +77,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: обновление строки (update), добавление - перестройка (create), верстка" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: обновление строки (update), добавление - перестройка (create), верстка" />
   </component>
 </project>
